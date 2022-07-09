@@ -1,0 +1,36 @@
+
+$PC:1200px;
+$mini:992px;
+$Tb:767px;
+$Mb:576px;
+$media:820px;
+
+body,html{
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+}
+a{
+	color: inherit;
+	user-select: none;
+}
+///////////////////////
+
+.content{
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 20px;
+	@media (max-width: 600px){
+		padding: 0 10px;
+	}
+	
+}
+
+.wrapper{
+	position: relative;
+}
+
+
+
+
