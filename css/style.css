@@ -157,7 +157,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: calc(70px + 30 * ((100vw - 320px) / 12450));
+  height: calc(70px + 30 * ((100vw - 320px) / 950));
 }
 
 .header__burger {

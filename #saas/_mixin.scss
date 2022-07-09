@@ -14,7 +14,7 @@ $maxWidth: 1280;
 
 //адаптивны свойства
 
-$maxWidth: 12770;
+$maxWidth: 1270;
 @mixin adaptiv-value($property,$pcSize, $mobSize) {
  $addSize: $pcSize - $mobSize;
  $maxWidth: $maxWidth - 320;
