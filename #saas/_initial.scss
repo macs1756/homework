@@ -1,3 +1,10 @@
 
 
-@include adaptiv-value(margin-top,150,101);
+.initial{
+	@include adaptiv-value(margin-top,100,80);
+}
+
+
+
+
+

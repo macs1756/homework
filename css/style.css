@@ -157,7 +157,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: calc(70px + 30 * ((100vw - 320px) / 950));
+  min-height: calc(70px + 20 * ((100vw - 320px) / 880));
 }
 
 .header__burger {
@@ -268,4 +268,8 @@ header {
   .nav {
     display: none;
   }
+}
+
+.initial {
+  margin-top: calc(80px + 20 * ((100vw - 320px) / 880));
 }/*# sourceMappingURL=style.css.map */
