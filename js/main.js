@@ -82,7 +82,6 @@ btn2.addEventListener("click", function(e){
 
 
 
-console.log(p1);
 
 
 window.addEventListener("scroll", function(e){
@@ -93,3 +92,45 @@ window.addEventListener("scroll", function(e){
 	}
 })
 
+
+
+const line = document.querySelector("#slide_line");
+const scrollImg = document.querySelector(".scrollImg_img");
+
+
+window.addEventListener("scroll", function(e){
+	console.log(scrollY);
+	if(scrollY > 920){
+		line.classList.add("line2");
+	}else{
+		line.classList.remove("line2");
+	}
+
+	if(scrollY > 1120){
+		line.classList.add("line3");
+	}else{
+		line.classList.remove("line3");
+	}
+
+	if(scrollY > 1300){
+		scrollImg.classList.add("scrollImg2");
+	}else{
+		scrollImg.classList.remove("scrollImg2");
+	}
+	
+	if(scrollY > 1400){
+		scrollImg.classList.add("scrollImg3");
+	}else{
+		scrollImg.classList.remove("scrollImg3");
+	}
+
+
+
+
+
+
+
+
+
+
+})

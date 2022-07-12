@@ -3,6 +3,7 @@
 .initial{
 	@include adaptiv-value(margin-top,150,120);
 	min-height: 300vh;
+	overflow: hidden;
 }
 
 
@@ -136,4 +137,57 @@ display: none;
 	transition: all 1s ease-in;
 	font-weight: 900;
 	color: rgba(2, 2, 24, 0.623);
+}
+
+
+.line{
+	display: block;
+	background-color: red;
+	width: 100px;
+	height: 7px;
+	margin-top: 30px;
+	transition: all 1s ease-out;	
+}
+
+.line2{
+	transition: all 1.5s ease-out;
+	width: 300px;
+}
+
+
+.line3{
+	transition: all 1.5s ease-out;
+	width: 500px;
+}
+
+
+
+
+.scrollImg_wr {
+	margin-top: 100px;
+	position: relative;
+}
+.scrollImg_img {
+	@include adaptiv-value(width,300,150);
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 1s linear;
+	
+}
+
+.scrollImg2{
+	position: absolute;
+	top: 0;
+	right: 40%;
+	transition: all 1s linear;
+}
+
+.scrollImg3{
+	position: absolute;
+	top: 0;
+	right: 100%;
+	transform: translateX(90%);
+	transition: all 1s linear;
 }

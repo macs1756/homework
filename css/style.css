@@ -159,7 +159,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(70px + 20 * ((100vw - 320px) / 880));
+  min-height: calc(50px + 20 * ((100vw - 320px) / 880));
 }
 
 .header__burger {
@@ -275,6 +275,7 @@ header {
 .initial {
   margin-top: calc(120px + 30 * ((100vw - 320px) / 880));
   min-height: 300vh;
+  overflow: hidden;
 }
 
 #check {
@@ -401,4 +402,51 @@ header {
   transition: all 1s ease-in;
   font-weight: 900;
   color: rgba(2, 2, 24, 0.623);
+}
+
+.line {
+  display: block;
+  background-color: red;
+  width: 100px;
+  height: 7px;
+  margin-top: 30px;
+  transition: all 1s ease-out;
+}
+
+.line2 {
+  transition: all 1.5s ease-out;
+  width: 300px;
+}
+
+.line3 {
+  transition: all 1.5s ease-out;
+  width: 500px;
+}
+
+.scrollImg_wr {
+  margin-top: 100px;
+  position: relative;
+}
+
+.scrollImg_img {
+  width: calc(150px + 150 * ((100vw - 320px) / 880));
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 1s linear;
+}
+
+.scrollImg2 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  transition: all 1s linear;
+}
+
+.scrollImg3 {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  transform: translateX(90%);
+  transition: all 1s linear;
 }/*# sourceMappingURL=style.css.map */
