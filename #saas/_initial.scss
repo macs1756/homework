@@ -1,10 +1,139 @@
 
 
 .initial{
-	@include adaptiv-value(margin-top,100,80);
+	@include adaptiv-value(margin-top,150,120);
+	min-height: 300vh;
+}
+
+
+#check{
+margin-top: 20px;
+
 }
 
 
 
+.formCheck{
+	p{font-weight: 900;font-size: 30px;}
+}
 
 
+#checkBtn, #uncheck{
+	border: 1px solid #000;
+	padding: 3px 7px;
+	margin: 10px 0;
+	display: inline-block;
+}
+
+
+.book__wr {
+	border: 5px solid #c5c5c5;
+	border-radius: 15px;
+	height: 700px;
+}
+.book {
+	border: 20px solid #000;
+	border-radius: 10px;
+	height: 690px;
+	display: flex;
+}
+.book__written {
+	padding: 30px;
+flex: 0 0 50%;
+width: 350px;
+border-right: 10px solid #000;
+overflow: auto;
+}
+
+.book__written-title{
+	margin-bottom: 20px;
+}
+
+.book__create {
+	padding: 30px;
+	flex: 0 0 50%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: relative;
+}
+
+
+.createTask {
+	border-bottom: 2px solid #000;
+	width: 300px;
+	margin: 20px 0;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.createBtn {
+	color: #000;
+	background-color: aqua;
+	padding: 5px 10px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+
+.listStyle{
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	span{
+		display: block;
+	}
+}
+
+.list__img{
+	flex: 0 0 30px;
+	width: 30px;
+}
+.create__null {
+position: absolute;
+top: 100px;
+left: 30px;
+color: red;
+font-size: 14px;
+font-weight: 100;
+display: none;
+}
+
+
+.scroll_btn{
+		border: 1px solid #000;
+		padding: 5px 10px;
+		display: inline-block;
+		margin-top: 30px;
+}
+
+
+.btn2{
+	display: block;
+	max-width: 150px;
+	border: 1px solid #000;
+	padding: 5px 10px;
+}
+
+.mm{
+	height: 500px;
+	display: block;
+}
+
+#p1{
+	width: 200px;
+	height: 50px;
+	font-size: 40px;
+	margin: 0 auto;
+}
+
+
+.sc{
+	
+	transform: scale(1.6) translate(0,-100px);
+	transition: all 1s ease-in;
+	font-weight: 900;
+	color: rgba(2, 2, 24, 0.623);
+}
