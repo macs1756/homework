@@ -433,14 +433,14 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  transition: all 1s linear;
+  transition: all 1.5s linear;
 }
 
 .scrollImg2 {
   position: absolute;
   top: 0;
   right: 40%;
-  transition: all 1s linear;
+  transition: all 1.5s linear;
 }
 
 .scrollImg3 {
@@ -448,5 +448,13 @@ header {
   top: 0;
   right: 100%;
   transform: translateX(90%);
-  transition: all 1s linear;
+  transition: all 1.5s linear;
+}
+
+.scrollUp {
+  margin: 100px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  display: inline-block;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

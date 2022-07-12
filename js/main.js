@@ -123,14 +123,14 @@ window.addEventListener("scroll", function(e){
 	}else{
 		scrollImg.classList.remove("scrollImg3");
 	}
+})
 
 
 
+const scrollUp = document.querySelector(".scrollUp");
 
-
-
-
-
-
-
+scrollUp.addEventListener("click", function(){
+	window.scrollTo({
+		top:0,
+	})
 })
