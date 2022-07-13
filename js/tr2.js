@@ -6,22 +6,22 @@ const save = document.querySelector(".bottom_style");
 const style = document.querySelector(".top_style");
 const styleContent = document.querySelector(".pr__bottom-style");
 
-editTop.addEventListener("click", function(){
+editTop.addEventListener("click", function () {
 	styleContent.classList.remove("bottom-style-open");
-		area.value = prFirst.innerHTML;
-		areaWr.classList.toggle("pr__open");
+	area.value = prFirst.innerHTML;
+	areaWr.classList.toggle("pr__open");
 });
 
 
-save.addEventListener("click", function(){
+save.addEventListener("click", function () {
 
-		prFirst.innerHTML = "";
-	
-		prFirst.insertAdjacentHTML("beforeend", area.value);
+	prFirst.innerHTML = "";
+
+	prFirst.insertAdjacentHTML("beforeend", area.value);
 });
 
 
-style.addEventListener("click", function(){
+style.addEventListener("click", function () {
 	areaWr.classList.remove("pr__open");
 	styleContent.classList.add("bottom-style-open");
 });
@@ -32,14 +32,14 @@ const font = document.querySelectorAll("[data-font]");
 
 
 
-font.forEach(item=>{
-	item.addEventListener("click", ()=>{
-		if(item.checked){
-			
+font.forEach(item => {
+	item.addEventListener("click", () => {
+		if (item.checked) {
+
 			prFirst.style.fontSize = item.value;
 		};
 	});
-	
+
 });
 
 
@@ -47,9 +47,38 @@ font.forEach(item=>{
 
 const family = document.querySelectorAll("[data-family]");
 
-family.forEach(item=>{
-	item.addEventListener("click", ()=>{
+family.forEach(item => {
+	item.addEventListener("click", () => {
 		prFirst.style.fontFamily = item.value;
 	});
 });
 
+
+
+const fontCheck = document.querySelectorAll("#fontCheck");
+
+fontCheck.forEach(item => {
+	item.addEventListener("click", () => {
+	
+
+
+			if (item.value === "900" && item.checked) {
+				prFirst.style.fontWeight = item.value;
+			} else {
+				prFirst.style.fontWeight = "400";
+			}
+
+
+			if (item.value === "italic" && item.checked) {
+				prFirst.style.fontStyle = item.value;
+			} else {
+				prFirst.style.fontStyle = "normal";
+			}
+
+
+		
+
+		});
+
+
+});
