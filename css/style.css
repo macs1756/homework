@@ -457,4 +457,112 @@ header {
   border: 1px solid #000;
   display: inline-block;
   cursor: pointer;
+}
+
+.prac {
+  display: inline-block;
+  cursor: pointer;
+  margin: 100px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+}
+
+.pr__wr {
+  max-width: 60%;
+  margin: 0 auto;
+  font-family: "Raleway";
+  margin-top: 100px;
+}
+@media (max-width: 576px) {
+  .pr__wr {
+    max-width: 100%;
+  }
+}
+.pr__wr a {
+  display: inline-block;
+}
+
+.pr__first {
+  transition: all 0.7s linear;
+  background-color: #c5c5c5;
+  padding: 20px 20px 40px 20px;
+}
+.pr__first p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.pr__btn {
+  margin: 0 auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pr__bottom {
+  background-color: #c5c5c5;
+  padding: 20px 20px 40px 20px;
+  min-height: 420px;
+}
+@media (max-width: 576px) {
+  .pr__bottom {
+    padding: 5px;
+  }
+}
+
+.pr_edit {
+  padding: 10px;
+  font-weight: 700;
+  background-color: yellow;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.pr_style {
+  padding: 10px;
+  font-weight: 700;
+  background-color: skyblue;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.pr__bottom-wr {
+  display: none;
+}
+
+.pr__open {
+  display: block;
+}
+
+#prArea {
+  width: 80%;
+  min-height: 300px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+}
+@media (max-width: 576px) {
+  #prArea {
+    width: 100%;
+  }
+}
+
+.pr__bottom-style {
+  display: none;
+}
+.pr__bottom-style input {
+  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  .pr__bottom-style input {
+    margin-left: 5px;
+  }
+}
+.pr__bottom-style p {
+  margin-bottom: 10px;
+}
+
+.bottom-style-open {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

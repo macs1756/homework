@@ -134,3 +134,10 @@ scrollUp.addEventListener("click", function(){
 		top:0,
 	})
 })
+
+
+
+///////////////////pr2
+
+
+
