@@ -46,10 +46,14 @@ font.forEach(item => {
 
 
 const family = document.querySelectorAll("[data-family]");
+const sel = document.querySelector("#family");
+
+
 
 family.forEach(item => {
 	item.addEventListener("click", () => {
-		prFirst.style.fontFamily = item.value;
+		prFirst.style.fontFamily = sel.value;
+		console.log(sel.value);
 	});
 });
 
