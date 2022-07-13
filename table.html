@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+			<div class="table__wr">
+					<h3>Choose what you want: </h3>
+					<div class="part">
+						<div class="part__text">Count TR:</div>
+						<div class="part__input">
+							<input id="TR" placeholder="Count TR: 4" type="number">
+						</div>
+					</div>
+					<div class="part">
+						<div class="part__text">Count TD:</div>
+						<div class="part__input">
+							<input id="TD" placeholder="Count TD: 7" type="number">
+						</div>
+					</div>
+					<h5>Add style to your table:</h5>
+					<div class="part">
+						<div class="part__text">Wigth of TD:</div>
+						<div class="part__input">
+							<input id="WW" placeholder="Wigth of TD: 10" type="text">
+						</div>
+					</div>
+					<div class="part">
+						<div class="part__text">Height of TR:</div>
+						<div class="part__input">
+							<input id="HH" placeholder="Height of TD: 20" type="text">
+						</div>
+					</div>
+					<div class="bd">
+						<div class="bd__width">
+							<span>Width of border:</span>
+							<select name="widthBd" id="widthBd">
+								<option value="1px">1px</option>
+								<option value="2px">2px</option>
+								<option value="3px">3px</option>
+								<option value="5px">5px</option>
+								<option value="7px">7px</option>
+							</select>
+						</div>
+						<div class="bd__type">
+							<span>Type of border:</span>
+							<select name="typeBd" id="typeBd">
+								<option value="solid">solid</option>
+								<option value="dotted">dotted</option>
+								<option value="dashed">dashed</option>
+								<option value="double">double</option>
+							</select>
+						</div>
+						<div class="bd__color">
+							<span>Color og border:</span>
+							<select name="colorBd" id="colorBd">
+								<option value="red">red</option>
+								<option value="black">black</option>
+								<option value="green">green</option>
+								<option value="blue">blue</option>
+								<option value="yellow">yellow</option>
+							</select>
+						</div>
+					</div>
+					<button class="table__button">Create Table</button>
+			</div>
+			<div class="table__item">
+				<div class="table__item-wr"></div>
+			</div>
+		
+		
+	<script src="js/table.js"></script>
+</body>
+</html>
