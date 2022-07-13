@@ -502,6 +502,7 @@ header {
 }
 
 .pr__bottom {
+  position: relative;
   background-color: #c5c5c5;
   padding: 20px 20px 40px 20px;
   min-height: 420px;
@@ -573,4 +574,61 @@ header {
 
 select {
   font-size: 20px;
+}
+
+#textColor, #bgColor {
+  padding: 5px 10px;
+  background-color: rgb(122, 107, 107);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.col, .color2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.col, .color2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.col__open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.colChildren, .colChildren2 {
+  border: 1px solid #000;
+  display: block;
+  width: calc(30px + 20 * ((100vw - 320px) / 880));
+  height: calc(30px + 20 * ((100vw - 320px) / 880));
+}
+
+.col1 {
+  background-color: #000;
+}
+
+.col2 {
+  background-color: green;
+}
+
+.col3 {
+  background-color: red;
+}
+
+.col4 {
+  background-color: rgb(227, 165, 89);
+}
+
+.col5 {
+  background-color: yellow;
+}
+
+.col6 {
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */

@@ -53,7 +53,6 @@ const sel = document.querySelector("#family");
 family.forEach(item => {
 	item.addEventListener("click", () => {
 		prFirst.style.fontFamily = sel.value;
-		console.log(sel.value);
 	});
 });
 
@@ -63,26 +62,72 @@ const fontCheck = document.querySelectorAll("#fontCheck");
 
 fontCheck.forEach(item => {
 	item.addEventListener("click", () => {
-	
 
 
-			if (item.value === "900" && item.checked) {
-				prFirst.style.fontWeight = item.value;
-			} else {
-				prFirst.style.fontWeight = "400";
-			}
+
+		if (item.value === "900" && item.checked) {
+			prFirst.style.fontWeight = item.value;
+		} else {
+			prFirst.style.fontWeight = "400";
+		}
 
 
-			if (item.value === "italic" && item.checked) {
-				prFirst.style.fontStyle = item.value;
-			} else {
-				prFirst.style.fontStyle = "normal";
-			}
+		if (item.value === "italic" && item.checked) {
+			prFirst.style.fontStyle = item.value;
+		} else {
+			prFirst.style.fontStyle = "normal";
+		}
 
 
-		
 
-		});
+
+	});
 
 
 });
+
+
+const colorText = document.querySelector("#textColor");
+const col = document.querySelector(".col");
+const color2 = document.querySelector(".color2");
+const currentColor = document.querySelectorAll(".colChildren");
+const currentColor2 = document.querySelectorAll(".colChildren2");
+const colorBg = document.querySelector("#bgColor");
+
+
+
+colorText.addEventListener("click", () => {
+
+	col.classList.toggle("col__open");
+	currentColor.forEach(item => {
+		item.addEventListener("click", function (e) {
+			col.classList.remove("col__open");
+			let bgcol = getComputedStyle(e.target);
+			prFirst.style.color = bgcol.backgroundColor;
+		});
+	});
+});
+
+
+
+
+
+
+
+colorBg.addEventListener("click", function (e) {
+
+		color2.classList.toggle("col__open");
+
+
+		currentColor2.forEach(item => {
+			item.addEventListener("click", function (e) {
+				color2.classList.remove("col__open");
+				let bgcol = getComputedStyle(e.target);
+				prFirst.style.backgroundColor = bgcol.backgroundColor;
+
+			});
+		});
+
+});
+
+
