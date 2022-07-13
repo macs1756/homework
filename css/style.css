@@ -565,4 +565,12 @@ header {
 
 .bottom-style-open {
   display: block;
+}
+
+.ff {
+  margin-top: 20px;
+}
+
+select {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

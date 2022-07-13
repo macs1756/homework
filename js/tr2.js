@@ -35,9 +35,21 @@ const font = document.querySelectorAll("[data-font]");
 font.forEach(item=>{
 	item.addEventListener("click", ()=>{
 		if(item.checked){
-			console.log(item.value);
+			
 			prFirst.style.fontSize = item.value;
-		}
-	})
+		};
+	});
 	
-})
+});
+
+
+
+
+const family = document.querySelectorAll("[data-family]");
+
+family.forEach(item=>{
+	item.addEventListener("click", ()=>{
+		prFirst.style.fontFamily = item.value;
+	});
+});
+
