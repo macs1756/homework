@@ -729,4 +729,42 @@ h3, h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.lesson2 {
+  padding: 150px;
+}
+
+#les2btn {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: green;
+  color: #fff;
+}
+#les2btn:disabled {
+  opacity: 0.3;
+}
+
+#les2 {
+  background-color: #c5c5c5;
+}
+
+.date {
+  border: 10px solid #887777;
+  width: 600px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.date__wr {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 90px;
+  font-weight: 500;
+  font-family: cursive;
 }/*# sourceMappingURL=style.css.map */
