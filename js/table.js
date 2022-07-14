@@ -143,6 +143,14 @@ if(d.getSeconds()<10){
 	tSecond.innerText = d.getSeconds();
 }
 
+}
+
+setInterval(timeOn , 1);
+
+
+
+
+///////////////////////
 
 
 
@@ -151,8 +159,70 @@ if(d.getSeconds()<10){
 
 
 
+
+
+
+function time2(){
+
+const d2m = document.querySelector(".date2__month");
+const d2days = document.querySelector(".date2__days");
+const d2hh = document.querySelector(".date2__hh");
+const d2min = document.querySelector(".date2__min");
+const d2sec = document.querySelector(".date2__sec");
+const d2ms = document.querySelector(".date2__ms");
+
+
+
+	let myDate = new Date(2023,0,1,0,0,0,0).getTime();
+	let currentDate = new Date().getTime();
+	let distance = +myDate - +currentDate;
+	
+
+	let month = Math.floor(distance/ (1000 * 60 * 60 * 24 * 30));
+	let days = Math.floor(distance% (1000 * 60 * 60 * 24 * 30)/(1000 * 60 * 60 * 24));
+	let hh = Math.floor(distance% (1000 * 60 * 60 * 24)/(1000 * 60 * 60));
+	let min = Math.floor(distance% (1000 * 60 * 60)/(1000 * 60 ));
+	let sec = Math.floor(distance% (1000 * 60)/1000);
+	let ms = Math.floor(distance% 1000) ;
+	//console.log(month+"month",days+"days",hh+"hours", min+"min", sec+"sec", ms+"ms");
+
+
+if(month<10){
+		month = "0"+month;
+}
+if(days<10){
+	days = "0"+days;
+}
+if(hh<10){
+	hh = "0"+hh;
+}
+if(min<10){
+	min = "0"+min;
+}
+
+if(sec<10){
+	sec = "0"+sec;
+}
+
+if(ms<10){
+	ms = "0"+ms;
 }
 
 
 
-setInterval(timeOn , 1);
+
+
+
+
+
+
+	d2m.innerText = month;
+	d2days.innerText = days;
+	d2hh.innerText = hh;
+	d2min.innerText = min;
+	d2sec.innerText = sec;
+
+}
+
+setInterval(time2, 1000);
+
