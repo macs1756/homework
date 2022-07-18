@@ -208,14 +208,6 @@ if(ms<10){
 	ms = "0"+ms;
 }
 
-
-
-
-
-
-
-
-
 	d2m.innerText = month;
 	d2days.innerText = days;
 	d2hh.innerText = hh;
@@ -225,4 +217,6 @@ if(ms<10){
 }
 
 setInterval(time2, 1000);
+
+
 

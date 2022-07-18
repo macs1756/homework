@@ -771,4 +771,130 @@ h3, h5 {
 
 .date2 {
   width: 900px;
+}
+
+.action__wr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.action__item {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.action__item span {
+  margin: 0 3px;
+  padding-bottom: 7px;
+  color: rgb(28, 7, 7);
+}
+
+.action__p {
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: -1px 0 #383838, 0 1px #383838, 1px 0 #383838, 0 -1px #383838;
+}
+
+.action__days {
+  color: #EA52F8;
+}
+
+.action__hrs {
+  color: #0066FF;
+}
+
+.action__min {
+  color: #2BC0E4;
+}
+
+.action__sec {
+  color: #ff886A;
+}
+
+.action__part-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.action__part-text {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  margin-left: 150px;
+}
+
+.action__days-text {
+  margin-right: 20px;
+  color: #EA52F8;
+}
+
+.action__hrs-text {
+  margin-right: 22px;
+  color: #0066FF;
+}
+
+.action__min-text {
+  margin-right: 22px;
+  color: #2BC0E4;
+}
+
+.action__sec-text {
+  color: #ff886A;
+}
+
+.part2 {
+  border: 1px solid #000;
+}
+.part2 input {
+  background-color: rgba(209, 133, 133, 0.6);
+  padding-left: 20px;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.part2 input::-moz-placeholder {
+  font-size: 22px;
+  opacity: 0.7;
+}
+.part2 input:-ms-input-placeholder {
+  font-size: 22px;
+  opacity: 0.7;
+}
+.part2 input::placeholder {
+  font-size: 22px;
+  opacity: 0.7;
+}
+.part2 p {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  display: block;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.in74_wr {
+  position: relative;
+}
+.in74_wr p {
+  position: absolute;
+  top: 140px;
+  left: 100px;
+  color: red;
+  font-weight: 700;
+}
+
+#in74 {
+  font-family: cursive;
+  background-color: rgb(198, 186, 186);
+  height: 30px;
+  width: 240px;
+  margin: 100px;
+  padding-left: 15px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
