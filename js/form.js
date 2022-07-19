@@ -35,7 +35,11 @@
 //імя
 		 inputBtn.addEventListener("click", function(e){
 					
-			let regName = /^[а-яА-Яa-zA-Z]{3,}$/;
+			let regName = /^[а-яА-Яa-zA-ZЄ-ЯҐа-їґ]{3,}$/;
+
+
+
+
 
 			if(regName.test(userName.value)){
 				userName.style.border = "1px solid green";
