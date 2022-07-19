@@ -75,28 +75,30 @@ secT.innerText = sec;
 	const in74p = in74Wr.querySelector("p");
 
 	
-	//in74.addEventListener("input", ()=>{
-	//	const regIn74 = /^[0-9]{12}$/
-	//	
-//
-//
-//
-	//	if(regIn74.test(in74.value)){
-	//		in74.style.border = "1px solid green";
-	//		in74p.style.color = "green";
-	//		in74p.innerText = "yes";
-	//	}else{
-	//		in74.style.border = "1px solid red";
-	//		in74p.style.color = "red";
-	//		in74p.innerText = "now";
-	//	}
-	//});
+	in74.addEventListener("input", ()=>{
+		const regIn74 = /^\+[0-9]{3}\([0-9]{2}\)[0-9]{7}$/
+
+		if(regIn74.test(in74.value)){
+			in74.style.border = "1px solid green";
+			in74p.style.color = "green";
+			in74p.innerText = "yes";
+		}else{
+			in74.style.border = "1px solid red";
+			in74p.style.color = "red";
+			in74p.innerText = "now";
+		}
+	});
 
 
 
 	let numberMask = IMask(in74,
 		{
-			mask: '+{380}(00)00-00-000',
+			mask: '+{380}(00)0000000',
 		});
 
+
+
+		let reg2 = /[0-9]{3}-[0-9]{4}-[0-9]{2}-[0-9]{2}|[0-9]{10}/;
+
+		console.log(reg2.test("0957954260"));
 	
